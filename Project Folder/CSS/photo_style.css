@@ -76,7 +76,7 @@ margin: 15px auto;
 
 .photo img {
     transition: transform .5s;
-    tranform-origin: 50% 50%;
+    transform-origin: 50% 50%;
 }
 
 .photo:hover img {
