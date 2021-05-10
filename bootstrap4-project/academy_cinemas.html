@@ -21,20 +21,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link text-light" href="#">About <span class="sr-only">(current)</span></a>
+                  <a class="nav-link text-light" href="#about">About <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link text-light" href="#">Showtimes</a>
+                  <a class="nav-link text-light" href="#deals">Deals</a>
                 </li>
                 <li class="nav-item dropdown active">
                   <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Deals
+                      Showtimes
                     </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#"></a>
+                    <a class="dropdown-item" href="#ghost">Ghost in the Shell</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#kong">Kong: Skull Island</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#beast">Beauty and the Beast</a>
                   </div>
                 </li>
               </ul>
@@ -63,7 +65,7 @@
 
 
             </div>
-            <div class="col-sm">
+            <div id="about" class="col-sm">
               
 
               <h3>Accomodations:</h3>
@@ -72,15 +74,116 @@
               <p>All of our auditoriums are equipped with brand new Christie 3D&reg; sound systems!</p>
               <p>Relax in our extra-wide, plush cushioning recliners. Our seating arrangement is disability friendly. &#9855;</p>
 
-
+              
             </div>
             <div class="col-sm">
               
-
-
-
+              <h3>Now Playing:</h3>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <a class="nav-link" href="#show">Kong: Skull Island</a>
+                </li>
+                <li class="list-group-item">
+                  <a class="nav-link" href="#show">Ghost in the Shell</a>
+                </li>
+                <li class="list-group-item">
+                  <a class="nav-link" href="#show">Beauty and the Beast</a>
+                </li>
+              </ul>
             </div>
           </div>
+        </div>
+
+        <!-- showtimes -->
+
+        <div id="show" class="container">
+          <h1>Showtimes:</h1>
+          <div class="row">
+            <div id="kong" class="col border border-info bg-dark text-light">
+              <img src= "./img/kongskullisland.jpg" alt="KONG: Skull Island" width=300px class="pb-2 pt-2">
+              <h1>KONG: Skull Island</h1>
+              <p class="pb-5 ">Scientists, soldiers and adventurers unite to explore a mythical, uncharted island in the Pacific Ocean. 
+                Cut off from everything they know, they venture into the domain of the mighty Kong, igniting the
+                ultimate battle between man and nature. As their mission of discovery soon becomes one of survival,
+                they must fight to escape from a primal world where humanity does not belong.<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+
+                <div class="btn-group pt-5 pb-2" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-info">12:00 pm</button>
+                  <button type="button" class="btn btn-info">1:30 pm</button>
+                  <button type="button" class="btn btn-info">3:00 pm</button>
+                  <button type="button" class="btn btn-info">5:30 pm</button>
+                  <button type="button" class="btn btn-info">7:00 pm</button>
+                  <button type="button" class="btn btn-info">9:30 pm</button>
+                </div>
+            </div>
+            <div id="ghost" class="col border border-info bg-dark text-light">
+              <img src= "./img/ghostintheshell.jpg" alt="Ghost in the Shell" width=300px class="pb-2 pt-2">
+              <h1>Ghost in the Shell</h1>
+              <p class="pb-5">In the near future, Major is the first of her kind: a human who is cyber-enhanced to
+                be a perfect soldier devoted to stopping the world's most dangerous criminals. 
+                When terrorism reaches a new level that includes the ability to hack into people's minds and control them,
+                Major is uniquely qualified to stop it. As she prepares to face a new enemy, Major discovers that her life was stolen instead of saved. 
+                Now, she will stop at nothing to recover her past while punishing those who did this to her.</p>
+
+                <div class="btn-group pt-5 pb-2" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-info">12:00 pm</button>
+                  <button type="button" class="btn btn-info">1:30 pm</button>
+                  <button type="button" class="btn btn-info">3:00 pm</button>
+                  <button type="button" class="btn btn-info">5:30 pm</button>
+                  <button type="button" class="btn btn-info">7:00 pm</button>
+                  <button type="button" class="btn btn-info">9:30 pm</button>
+                </div>
+            </div>
+            <div id="beast" class="col border border-info bg-dark text-light">
+              <img src= "./img/beautyandthebeast.jpg" alt="Beauty and the Beast" width=300px class="pb-2 pt-2">
+              <h1>Beauty and the Beast</h1>
+              <p>An arrogant prince is cursed to live as a terrifying beast until he finds true love. Strangely, 
+                his chance comes when he captures an unwary clockmaker, whose place is then taken by his bold 
+                and beautiful daughter Belle. Helped by the Beast's similarly enchanted servants, including a 
+                clock, a teapot and a candelabra, Belle begins to see the sensitive soul behind the fearsome facade. 
+                But as time runs out, it soon becomes obvious that Belle's cocky suitor Gaston is the 
+                real beast of the piece.</p>
+
+                <div class="btn-group pb-2" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-info">12:00 pm</button>
+                  <button type="button" class="btn btn-info">1:30 pm</button>
+                  <button type="button" class="btn btn-info">3:00 pm</button>
+                  <button type="button" class="btn btn-info">5:30 pm</button>
+                  <button type="button" class="btn btn-info">7:00 pm</button>
+                  <button type="button" class="btn btn-info">9:30 pm</button>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- /showtimes -->
+
+        <div id="deals" class="text-center">
+          <form>
+            <h1 class="text-primary my-5">Sign up for Movie Club Rewards</h1>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email Address" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+        <div class="container">
+          <ul class="nav nav-inline">
+            <li class="nav-item">
+              <small><a class="nav-link active" href="#">Movie Rewards</a></small>
+            </li>
+            <li class="nav-item">
+              <small><a class="nav-link" href="#">Movies@news.org</a></small>
+            </li>
+            <li class="nav-item">
+              <small><a class="nav-link" href="#">Info@academycinemas.com</a></small>
+            </li>
+            <li class="nav-item">
+              <small class="nav-link">&copy;2019 Academy Cinemas&reg;</small>
+            </li>
+          </ul>
         </div>
 
 
