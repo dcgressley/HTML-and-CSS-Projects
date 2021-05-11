@@ -17,4 +17,4 @@ This page was built using bootstrap4. It is an example of the front page for a s
 
 - [Portfolio site](dcgressley.github.io)
 
- This page was built to serve as my portfolio site to give people a place to reach out to me. It is styled using CSS and inclueds a navbar, an animated picture overlay, tables and a functional form to reach me.
+ This page was built to serve as my portfolio site to give people a place to reach out to me. It is styled using CSS and inclueds a navbar, an animated picture overlay, tables and a functional form to reach me. The code for it can be viewed [here](https://github.com/dcgressley/HTML-and-CSS-Projects/tree/main/portfolio)
