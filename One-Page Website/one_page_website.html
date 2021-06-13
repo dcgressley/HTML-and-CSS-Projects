@@ -4,6 +4,7 @@
 		<title>Esports Lessons</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="./css/one-page-website.css">
+		<script src="js/one_page_website.js" defer></script>
 	</head>
 	
 	<body>
@@ -39,60 +40,76 @@
 		</div>
 		<!--END VIDEO CONTAINER-->
 		
-		<!--PHOTO CONTAINER 1-->
-		<div>
-			<div>
-				<img src="./thumbs/thumbnail_1.png" width="200px" height="200px" alt="Image not found">
-				<div>
-					<h3>We have multiple classes covering a plethora of different Esports!</h3>
-				</div>
+		<!-- Images used to open the lightbox -->
+		<div class="row">
+			<div class="column">
+				<img src="thumbs/thumbnail_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="thumbs/thumbnail_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="thumbs/thumbnail_4.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="thumbs/thumbnail_5.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
 			</div>
 		</div>
-		<!--END PHOTO CONTAINER 1-->
 		
-		<!--PHOTO CONTAINER 2-->
-		<div>
-			<div>
-				<img src="./thumbs/thumbnail_2.png" width="200px" height="200px" alt="Image not found">
-				<div>
-					<h3>We have multiple classes covering a plethora of different Esports!</h3>
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				
+				<div class="mySlides">
+					<div class="numbertext">1 / 4</div>
+					<img src="thumbs/thumbnail_1.png" style="width:100%">
+				</div>
+				
+				<div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="thumbs/thumbnail_2.png" style="width:100%">
+				</div>
+				
+				<div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="thumbs/thumbnail_4.png" style="width:100%">
+				</div>
+				
+				<div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="thumbs/thumbnail_5.png" style="width:100%">
+				</div>
+
+				
+				
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				
+				<!-- Caption text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+				
+				<!-- Thumbnail image controls -->
+				<div class="column">
+					<img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+				</div>
+				
+				<div class="column">
+					<img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+				</div>
+				
+				<div class="column">
+					<img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+				</div>
+				
+				<div class="column">
+					<img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
 				</div>
 			</div>
 		</div>
-		<!--END PHOTO CONTAINER 2-->
-		
-		<!--PHOTO CONTAINER 3-->
-		<div>
-			<div>
-				<img src="./thumbs/thumbnail_3.png" width="200px" height="200px" alt="Image not found">
-				<div>
-					<h3>We have multiple classes covering a plethora of different Esports!</h3>
-				</div>
-			</div>
-		</div>
-		<!--END PHOTO CONTAINER 3-->
-		
-		<!--PHOTO CONTAINER 4-->
-		<div>
-			<div>
-				<img src="./thumbs/thumbnail_4.png" width="200px" height="200px" alt="Image not found">
-				<div>
-					<h3>We have multiple classes covering a plethora of different Esports!</h3>
-				</div>
-			</div>
-		</div>
-		<!--END PHOTO CONTAINER 4-->
-		
-		<!--PHOTO CONTAINER 5-->
-		<div>
-			<div>
-				<img src="./thumbs/thumbnail_5.png" width="200px" height="200px" alt="Image not found">
-				<div>
-					<h3>We have multiple classes covering a plethora of different Esports!</h3>
-				</div>
-			</div>
-		</div>
-		<!--END PHOTO CONTAINER 5-->
 		
 		
 		<!--CONTACT-->
@@ -119,10 +136,10 @@
 			<div>
 				<footer>Daniel Gressley, 2021<br>
 					esportslessons@emailsite.com</footer>
+				</div>
 			</div>
-		</div>
-		<!--END FOOTER-->
-		
-	</body>
-</html>
+			<!--END FOOTER-->
+			
+		</body>
+		</html>
 		
