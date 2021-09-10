@@ -2,7 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     opacity: 1;
-    transition: is opacity;
+    transition: 1s opacity;
 }
 
 body.fade-out {
