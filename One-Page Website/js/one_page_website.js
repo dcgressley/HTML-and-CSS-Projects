@@ -2,6 +2,24 @@ window.addEventListener('DOMContentLoaded', () => {
   document.body.classList.remove('fade-out');
 });
 
+//Validate the form
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  let y = document.forms["myForm"]["lname"].value;
+  let z = document.forms["myForm"]["email"].value;
+  if (x == "") {
+    alert("Please fill out all required fields");
+    return false;
+  }
+  if (y == "") {
+    alert("Please fill out all required fields");
+    return false;
+  }
+  if (z == "") {
+    alert("Please fill out all required fields");
+    return false;
+  }
+}
 
 // Open the Modal
 function openModal() {

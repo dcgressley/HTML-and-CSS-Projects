@@ -1,8 +1,38 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     opacity: 1;
     transition: 1s opacity;
+}
+
+#moving {
+  position: relative;
+  animation: moveThis 1s;
+}
+
+@keyframes moveThis {
+  from {top: 600px;}
+  to {top: 0px;}
+}
+
+#zoomThis {
+  animation: zoominoutsinglefeatured 15s forwards;
+}
+
+@keyframes zoominoutsinglefeatured {
+  0% {
+    transform: scale(1,1);
+  }
+  50% {
+    transform: scale(1.2,1.2);
+  }
+  100% {
+    transform: scale(1,1);
+  }
 }
 
 body.fade-out {

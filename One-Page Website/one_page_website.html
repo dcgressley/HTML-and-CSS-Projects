@@ -39,7 +39,7 @@
 		<!--VIDEO-->
 		<div>
 			<div>
-				<iframe width="560" height="360" src="https://www.youtube.com/embed/jAOIwNOU_I4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe id="moving" width="560" height="360" src="https://www.youtube.com/embed/jAOIwNOU_I4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
 		<!--END VIDEO CONTAINER-->
@@ -47,7 +47,7 @@
 		<!-- Images used to open the lightbox -->
 		<div class="row">
 			<div class="column">
-				<img src="thumbs/thumbnail_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+				<img id="zoomThis" src="thumbs/thumbnail_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
 			</div>
 			<div class="column">
 				<img src="thumbs/thumbnail_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
@@ -119,11 +119,11 @@
 		<!--CONTACT-->
 		<div id="contact">
 			<div>
-				<form action="" method="post">
-					<input class="rsvp" type="text" value="First Name">
-					<input class="rsvp" type="text" value="Last Name">
-					<input class="rsvp" type="text" value="Email Address">
-					<input class="rsvp" type="text" value="Phone Number">
+				<form id='myForm' action="" onsubmit="return validateForm()" method="post">
+					<input id="fname" class="rsvp" type="text" placeholder="First Name">
+					<input id="lname" class="rsvp" type="text" placeholder="Last Name">
+					<input id="email" class="rsvp" type="text" placeholder="Email Address">
+					<input id="phone" class="rsvp" type="text" placeholder="Phone Number (optional)">
 					<div class="form-spacer">
 						<label class="terms">Terms and Conditions</label>
 					</div>
